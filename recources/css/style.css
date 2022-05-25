@@ -4,6 +4,26 @@
     src: url(./ComicMono.ttf);
 }
 
+html {
+    font-size: 5vh;
+}
+
+h1 {
+    font-size: 1rem;
+}
+
+h2 {
+    font-size: 0.8rem;
+    ;
+}
+
+ul li {
+    font-size: 0.6rem;
+}
+
 body {
     font-family: 'Comic Mono';
+    background-image: url('../images/pexels-faik-akmd-1025469.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
 }
