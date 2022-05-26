@@ -1,29 +1,91 @@
-@font-face {
-    font-family: Comic Mono;
-    font-weight: normal;
-    src: url(./ComicMono.ttf);
-}
-
-html {
-    font-size: 5vh;
-}
-
-h1 {
-    font-size: 1rem;
-}
-
-h2 {
-    font-size: 0.8rem;
-    ;
-}
-
-ul li {
-    font-size: 0.6rem;
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
 body {
-    font-family: 'Comic Mono';
-    background-image: url('../images/pexels-faik-akmd-1025469.jpg');
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-image: url('../images/jeremy-perkins-uhjiu8FjnsQ-unsplash.jpg');
     background-size: cover;
     background-repeat: no-repeat;
+}
+
+.card {
+    display: flex;
+    align-items: center;
+    position: relative;
+    width: 600px;
+    height: 350px;
+    border-radius: 20px;
+    transition: .5s;
+}
+
+.card .circle {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 40px;
+    overflow: hidden;
+}
+
+.card .circle::before {
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background: #030c0e;
+    clip-path: circle(120px at center);
+    transition: 0.7s;
+}
+
+.card .circle:hover:before {
+    clip-path: circle(300px at left);
+    background: #AEFEFF;
+    position: absolute;
+    z-index: -1;
+}
+
+.card img {
+    width: 200px;
+    border-radius: 50%;
+    position: absolute;
+    z-index: -1;
+    left: 33%;
+}
+
+.card:hover img {
+    position: relative;
+    border-radius: 50%;
+    position: absolute;
+    left: 55%;
+    pointer-events: none;
+    top: 20%;
+    transition: 1s;
+}
+
+.card h1 {
+    position: absolute;
+    /* color: white; */
+    font-size: 4vh;
+    width: 200px;
+    opacity: 0;
+    /* left: 20%; */
+    padding-left: 20px;
+    transition: 1s;
+    left: 20%;
+}
+
+.card:hover h1 {
+    opacity: 1;
+    color: black;
+    left: 10%;
+    pointer-events: none;
 }
