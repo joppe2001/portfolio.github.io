@@ -1,3 +1,10 @@
-var number = Math.floor(Math.random() * 100)
+var circle = document.getElementById("test")
 
-console.log(number);
+const changeColor = () => {
+    circle.style.color = 'red'
+}
+
+circle.addEventListener('mouseover', changeColor)
+circle.addEventListener('mouseout', function() {
+    circle.style.color = ''
+})
