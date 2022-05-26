@@ -1,5 +1,10 @@
-var circle = document.querySelector('circle')
+const init = () => {
+    //All your code 
+    var circle = document.getElementById("p-under")
 
-const changecolor = () => {
-    circle.style.image
+
+    circle.addEventListener('click', function() {
+        this.style.color = 'red'
+    })
 }
+document.addEventListener("DOMContentLoaded", init);
