@@ -96,3 +96,33 @@
     opacity: 0.5;
     padding: 10px 30px;
 }
+
+.side-planet-container h2 {
+    position: absolute;
+    top: 8vh;
+    left: 18vh;
+    width: 80px;
+    opacity: 0;
+    transition: ease-out;
+    pointer-events: none;
+}
+
+.side-planet-container h2:hover {
+    opacity: 1;
+    width: 140px;
+}
+
+.sideplanet img {
+    position: absolute;
+    top: 5vh;
+    left: 20vh;
+    width: 80px;
+    opacity: 0;
+    transition: ease-out 1.2s;
+}
+
+.sideplanet img:hover {
+    position: absolute;
+    opacity: 1;
+    width: 110px;
+}
