@@ -50,7 +50,7 @@
 
 .card .circle:hover:before {
     clip-path: circle(300px at top left);
-    background-image: linear-gradient(to left top, #1b3c3f, #AEFEFF);
+    background-image: linear-gradient(to left top, #102325, #295b5f, #50969e, #AEFEFF);
     position: absolute;
 }
 
