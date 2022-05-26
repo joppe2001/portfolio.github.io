@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Changa:wght@200;400&family=JetBrains+Mono:wght@200;400;700&display=swap');
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Changa', sans-serif;
+    line-height: 4vh;
+}
+
+.main-planet {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-image: url('../images/jeremy-perkins-uhjiu8FjnsQ-unsplash.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.card {
+    display: flex;
+    align-items: center;
+    position: relative;
+    width: 480px;
+    height: 300px;
+    border-radius: 50px;
+}
+
+.card .circle {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 40px;
+    overflow: hidden;
+}
+
+.card .circle::before {
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background: #000000;
+    clip-path: circle(120px at center);
+    transition: 0.9s;
+}
+
+.card .circle:hover:before {
+    clip-path: circle(300px at top left);
+    background-image: linear-gradient(to left top, #1b3c3f, #AEFEFF);
+    position: absolute;
+}
+
+.card img {
+    width: 200px;
+    border-radius: 50%;
+    position: absolute;
+    z-index: -1;
+    left: 33%;
+    opacity: 0;
+    transition: 0.9s;
+}
+
+.card:hover img {
+    position: relative;
+    border-radius: 50%;
+    position: absolute;
+    left: 60%;
+    pointer-events: none;
+    top: 20%;
+    transition: 0.9s;
+    z-index: 1;
+    opacity: 1;
+}
+
+.card .text {
+    position: absolute;
+    width: 200px;
+    opacity: 0;
+    transition: 0.9s;
+    left: 20%;
+}
+
+.card:hover .text {
+    opacity: 1;
+    color: rgb(75, 1, 75);
+    left: 10%;
+    pointer-events: none;
+}
+
+.text p {
+    color: rgb(118, 0, 118);
+    opacity: 0.5;
+    padding: 10px 30px;
+}
