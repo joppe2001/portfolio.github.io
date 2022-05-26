@@ -4,7 +4,7 @@
     padding: 0;
 }
 
-body {
+.main-planet {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -18,10 +18,10 @@ body {
     display: flex;
     align-items: center;
     position: relative;
-    width: 600px;
-    height: 350px;
-    border-radius: 20px;
-    transition: .5s;
+    width: 480px;
+    height: 300px;
+    border-radius: 50px;
+    transition: .8s;
 }
 
 .card .circle {
@@ -50,7 +50,6 @@ body {
     clip-path: circle(300px at left);
     background: #AEFEFF;
     position: absolute;
-    z-index: -1;
 }
 
 .card img {
@@ -69,12 +68,11 @@ body {
     pointer-events: none;
     top: 20%;
     transition: 1s;
+    z-index: 1;
 }
 
-.card h1 {
+.card .text {
     position: absolute;
-    /* color: white; */
-    font-size: 4vh;
     width: 200px;
     opacity: 0;
     /* left: 20%; */
@@ -83,9 +81,15 @@ body {
     left: 20%;
 }
 
-.card:hover h1 {
+.card:hover .text {
     opacity: 1;
-    color: black;
+    color: rgb(86, 0, 86);
     left: 10%;
     pointer-events: none;
+}
+
+.text p {
+    color: rgb(86, 0, 86);
+    opacity: 0.5;
+    padding: 10px 30px;
 }
