@@ -45,7 +45,7 @@
     left: 0;
     background: #000000;
     clip-path: circle(120px at center);
-    transition: 0.7s;
+    transition: 0.9s;
 }
 
 .card .circle:hover:before {
@@ -60,26 +60,27 @@
     position: absolute;
     z-index: -1;
     left: 33%;
+    opacity: 0;
+    transition: 0.9s;
 }
 
 .card:hover img {
     position: relative;
     border-radius: 50%;
     position: absolute;
-    left: 55%;
+    left: 60%;
     pointer-events: none;
     top: 20%;
-    transition: 1s;
+    transition: 0.9s;
     z-index: 1;
+    opacity: 1;
 }
 
 .card .text {
     position: absolute;
     width: 200px;
     opacity: 0;
-    /* left: 20%; */
-    padding-left: 20px;
-    transition: 1s;
+    transition: 0.9s;
     left: 20%;
 }
 
