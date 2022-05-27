@@ -63,15 +63,14 @@ body {
     z-index: -1;
     left: 8vh;
     opacity: 0;
+    pointer-events: none;
     transition: 0.9s;
 }
 
 .card:hover img {
     position: absolute;
     border-radius: 50vh;
-    position: absolute;
     left: 30vh;
-    pointer-events: none;
     transition: 0.9s;
     z-index: 1;
     opacity: 1;
