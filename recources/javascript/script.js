@@ -12,29 +12,34 @@ var winnerMsg = document.getElementById("winner-message")
 
 
 sidePlanetContainer1.addEventListener('mousedown', function() {
-    this.style.top = '75%'
+    this.style.top = '80%'
     this.style.opacity = "1"
+    sidePlanet1.style.width = '15vh'
     showMessage();
 });
 sidePlanetContainer2.addEventListener('mousedown', function() {
     this.style.top = '65%'
     this.style.opacity = "1"
+    sidePlanet2.style.width = '15vh'
     showMessage();
 
 });
 sidePlanetContainer3.addEventListener('mousedown', function() {
     this.style.top = '15%'
-    showMessage();
     this.style.opacity = "1"
+    sidePlanet3.style.width = '15vh'
+    showMessage();
 });
 sidePlanetContainer4.addEventListener('mousedown', function() {
     this.style.top = '80%'
     this.style.opacity = "1"
+    sidePlanet4.style.width = '15vh'
     showMessage();
 });
 sidePlanetContainer5.addEventListener('mousedown', function() {
     this.style.top = '15%'
     this.style.opacity = "1"
+    sidePlanet5.style.width = '15vh'
     showMessage();
 });
 
