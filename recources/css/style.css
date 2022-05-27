@@ -104,7 +104,87 @@ body {
 
 /*  side planets */
 
-#test {
+#planet1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    color: white;
+    opacity: 0;
+    top: 83%;
+    width: 15vh;
+    transition: ease-out 1.2s;
+    cursor: default;
+}
+
+#planet-side1 {
+    width: 8vh;
+    transition: ease-out 1.2s;
+}
+
+#planet1 p {
+    font-size: 2.5vh;
+}
+
+
+/* planet 2 */
+
+#planet2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    color: white;
+    opacity: 0;
+    top: 70%;
+    left: 80%;
+    width: 15vh;
+    transition: ease-out 1.2s;
+    cursor: default;
+}
+
+#planet-side2 {
+    width: 8vh;
+    transition: ease-out 1.2s;
+}
+
+#planet2 p {
+    font-size: 3vh;
+}
+
+
+/* planet 3 */
+
+#planet3 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    color: white;
+    opacity: 0;
+    top: 20%;
+    left: 1%;
+    width: 15vh;
+    transition: ease-out 1.2s;
+    cursor: default;
+}
+
+#planet-side3 {
+    width: 8vh;
+    transition: ease-out 1.2s;
+}
+
+#planet3 p {
+    font-size: 2.5vh;
+}
+
+
+/* planet 4 */
+
+#planet4 {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -113,15 +193,44 @@ body {
     color: white;
     opacity: 0;
     top: 85%;
+    left: 20%;
     width: 15vh;
     transition: ease-out 1.2s;
+    cursor: default;
 }
 
-#test img {
-    width: 10vh;
+#planet-side4 {
+    width: 8vh;
     transition: ease-out 1.2s;
 }
 
-#test p {
-    font-size: 3vh;
+#planet4 {
+    font-size: 2.5vh;
+}
+
+
+/* planet 5 */
+
+#planet5 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    color: white;
+    opacity: 0;
+    top: 20%;
+    left: 60%;
+    width: 15vh;
+    transition: ease-out 1.2s;
+    cursor: default;
+}
+
+#planet-side5 {
+    width: 8vh;
+    transition: ease-out 1.2s;
+}
+
+#planet5 {
+    font-size: 2.5vh;
 }
