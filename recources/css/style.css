@@ -234,3 +234,14 @@ body {
 #planet5 {
     font-size: 2.5vh;
 }
+
+
+/* winner message */
+
+#winner-message {
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
+    color: white;
+    pointer-events: none;
+}

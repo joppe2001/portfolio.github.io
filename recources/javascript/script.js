@@ -8,42 +8,42 @@ var sidePlanet2 = document.getElementById("planet-side2")
 var sidePlanet3 = document.getElementById("planet-side3")
 var sidePlanet4 = document.getElementById("planet-side4")
 var sidePlanet5 = document.getElementById("planet-side5")
-
+var winnerMsg = document.getElementById("winner-message")
 
 
 sidePlanetContainer1.addEventListener('mousedown', function() {
     this.style.top = '75%'
     this.style.opacity = "1"
+    showMessage();
 });
 sidePlanetContainer2.addEventListener('mousedown', function() {
     this.style.top = '65%'
     this.style.opacity = "1"
+    showMessage();
+
 });
 sidePlanetContainer3.addEventListener('mousedown', function() {
     this.style.top = '15%'
+    showMessage();
     this.style.opacity = "1"
 });
 sidePlanetContainer4.addEventListener('mousedown', function() {
     this.style.top = '80%'
     this.style.opacity = "1"
+    showMessage();
 });
 sidePlanetContainer5.addEventListener('mousedown', function() {
     this.style.top = '15%'
     this.style.opacity = "1"
+    showMessage();
 });
 
-sidePlanet1.addEventListener('mousedown', function() {
-    this.style.width = '15vh'
-})
-sidePlanet2.addEventListener('mousedown', function() {
-    this.style.width = '15vh'
-})
-sidePlanet3.addEventListener('mousedown', function() {
-    this.style.width = '15vh'
-})
-sidePlanet4.addEventListener('mousedown', function() {
-    this.style.width = '15vh'
-})
-sidePlanet5.addEventListener('mousedown', function() {
-    this.style.width = '15vh'
-})
+
+function showMessage() {
+    if (sidePlanetContainer1.style.opacity === '1' && sidePlanetContainer2.style.opacity === '1' && sidePlanetContainer3.style.opacity === '1' && sidePlanetContainer4.style.opacity === '1' && sidePlanetContainer5.style.opacity === '1') {
+        setTimeout(() => { alert('well done, u have found them all') }, 500)
+
+    }
+};
+
+console.log(sidePlanetContainer1.style.opacity);
