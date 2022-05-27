@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Changa:wght@200;400&family=JetBrains+Mono:wght@200;400;700&display=swap');
 * {
-    box-sizing: border-box;
+    /* box-sizing: border-box; */
     margin: 0;
     padding: 0;
     font-family: 'Changa', sans-serif;
@@ -13,11 +13,9 @@ body {
     align-items: center;
     height: 100vh;
     background-image: url('../images/jeremy-perkins-uhjiu8FjnsQ-unsplash.jpg');
-    background-size: 100%;
+    background-size: cover;
     /* background-repeat: no-repeat; */
 }
-
-.main-planet {}
 
 .card {
     display: flex;
@@ -46,12 +44,12 @@ body {
     top: 0;
     left: 0;
     background: #000000;
-    clip-path: circle(14vh at center);
-    transition: 0.9s;
+    clip-path: circle(30% at center);
+    transition: ease-out 1.2s;
 }
 
 .card .circle:hover:before {
-    clip-path: circle(30vh at top left);
+    clip-path: circle(80% at top left);
     background-image: linear-gradient(to left top, #102325, #295b5f, #50969e, #AEFEFF);
     position: absolute;
 }
