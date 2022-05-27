@@ -1,10 +1,10 @@
-const init = () => {
-    //All your code 
-    var circle = document.getElementById("p-under")
+var circle = document.getElementById("test")
 
-
-    circle.addEventListener('click', function() {
-        this.style.color = 'red'
-    })
+const changeColor = () => {
+    circle.style.color = 'red'
 }
-document.addEventListener("DOMContentLoaded", init);
+
+circle.addEventListener('mouseover', changeColor)
+circle.addEventListener('mouseout', function() {
+    circle.style.color = ''
+})

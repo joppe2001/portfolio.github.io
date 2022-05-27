@@ -7,23 +7,25 @@
     line-height: 4vh;
 }
 
-.main-planet {
+body {
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 100vh;
+    height: 100vh;
     background-image: url('../images/jeremy-perkins-uhjiu8FjnsQ-unsplash.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
+    background-size: 100%;
+    /* background-repeat: no-repeat; */
 }
+
+.main-planet {}
 
 .card {
     display: flex;
     align-items: center;
     position: relative;
-    width: 480px;
-    height: 300px;
-    border-radius: 50px;
+    width: 40vh;
+    height: 35vh;
+    border-radius: 5vh;
 }
 
 .card .circle {
@@ -32,7 +34,7 @@
     left: 0;
     width: 100%;
     height: 100%;
-    border-radius: 40px;
+    border-radius: 4vh;
     overflow: hidden;
 }
 
@@ -44,55 +46,60 @@
     top: 0;
     left: 0;
     background: #000000;
-    clip-path: circle(120px at center);
+    clip-path: circle(14vh at center);
     transition: 0.9s;
 }
 
 .card .circle:hover:before {
-    clip-path: circle(300px at top left);
+    clip-path: circle(30vh at top left);
     background-image: linear-gradient(to left top, #102325, #295b5f, #50969e, #AEFEFF);
     position: absolute;
 }
 
 .card img {
-    width: 200px;
-    border-radius: 50%;
-    position: absolute;
+    width: 20vh;
+    border-radius: 50vh;
+    position: relative;
     z-index: -1;
-    left: 33%;
+    left: 8vh;
     opacity: 0;
     transition: 0.9s;
 }
 
 .card:hover img {
-    position: relative;
-    border-radius: 50%;
     position: absolute;
-    left: 60%;
+    border-radius: 50vh;
+    position: absolute;
+    left: 30vh;
     pointer-events: none;
-    top: 20%;
     transition: 0.9s;
     z-index: 1;
     opacity: 1;
 }
 
 .card .text {
+    font-size: 1.5vh;
     position: absolute;
-    width: 200px;
+    width: 25vh;
     opacity: 0;
     transition: 0.9s;
-    left: 20%;
+    left: 10vh;
 }
 
 .card:hover .text {
     opacity: 1;
     color: rgb(75, 1, 75);
-    left: 10%;
+    left: 3vh;
     pointer-events: none;
 }
 
 .text p {
     color: rgb(118, 0, 118);
     opacity: 0.5;
-    padding: 10px 30px;
+    padding: 1vh 3vh;
+}
+
+#p-under {
+    font-size: 1vh;
+    width: 100%;
 }
