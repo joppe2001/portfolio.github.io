@@ -49,7 +49,7 @@ body {
 }
 
 .card .circle:hover:before {
-    clip-path: circle(80% at top left);
+    clip-path: circle(75% at top left);
     background-image: linear-gradient(to left top, #102325, #295b5f, #50969e, #AEFEFF);
     position: absolute;
 }
@@ -99,4 +99,29 @@ body {
 #p-under {
     font-size: 1vh;
     width: 100%;
+}
+
+
+/*  side planets */
+
+#test {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    color: white;
+    opacity: 0;
+    top: 85%;
+    width: 15vh;
+    transition: ease-out 1.2s;
+}
+
+#test img {
+    width: 10vh;
+    transition: ease-out 1.2s;
+}
+
+#test p {
+    font-size: 3vh;
 }
