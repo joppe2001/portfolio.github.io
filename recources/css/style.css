@@ -8,13 +8,21 @@
 }
 
 body {
-    display: flex;
-    justify-content: center;
-    align-items: center;
     height: 100vh;
     background-image: url('../images/jeremy-perkins-uhjiu8FjnsQ-unsplash.jpg');
     background-size: cover;
-    /* background-repeat: no-repeat; */
+}
+
+header {
+    padding: 3vh;
+    color: white;
+}
+
+.main-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: calc(100% - 3vh);
 }
 
 .card {

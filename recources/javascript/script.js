@@ -45,10 +45,16 @@ sidePlanetContainer5.addEventListener('mousedown', function() {
 
 
 function showMessage() {
-    if (sidePlanetContainer1.style.opacity === '1' && sidePlanetContainer2.style.opacity === '1' && sidePlanetContainer3.style.opacity === '1' && sidePlanetContainer4.style.opacity === '1' && sidePlanetContainer5.style.opacity === '1') {
-        setTimeout(() => { alert('well done, u have found them all') }, 500)
+    if ([
+            sidePlanetContainer1,
+            sidePlanetContainer2,
+            sidePlanetContainer3,
+            sidePlanetContainer4,
+            sidePlanetContainer5
+        ].every(el => el.style.opacity === '1'));
+    setTimeout(() => { alert('well done, u have found them all') }, 500)
 
-    }
-};
+}
+
 
 console.log(sidePlanetContainer1.style.opacity);
