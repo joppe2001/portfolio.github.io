@@ -14,8 +14,12 @@ body {
 }
 
 header {
+    display: flex;
+    justify-content: center;
+    width: 100%;
     padding: 3vh;
-    color: white;
+    color: rgba(132, 98, 245, 0.98);
+    opacity: 0.4;
 }
 
 .main-container {
